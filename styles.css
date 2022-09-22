@@ -39,8 +39,7 @@ body{
 .allContain{
     display: flex;
     align-items: center;
-    alignt-content: center;
-    /* align-content: center; */
+    align-content: center;
     justify-content: center;
     }    
 
@@ -65,7 +64,7 @@ body{
     flex: 1;
     border-radius: 8px;
     background-color: whitesmoke;
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 
