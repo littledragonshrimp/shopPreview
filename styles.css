@@ -3,12 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap');
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
 }
 
 body{
     border: none;
     margin: 0;
+    background-color: hsl(30, 38%, 92%);
 }
 
 /* Desktop Only */
@@ -34,6 +36,23 @@ body{
     }
 }
 
+.allContain{
+    display: flex;
+    align-items: center;
+    alignt-content: center;
+    /* align-content: center; */
+    justify-content: center;
+    }    
+
+.cart {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background:none;
+    border: none;
+    justify-content: center;
+}
+
 .container {
     display: flex;
     margin-left: auto;
@@ -45,10 +64,9 @@ body{
     max-width: 500px;
     flex: 1;
     border-radius: 8px;
-    background-color: red;
-    margin-top: 25%;
+    background-color: whitesmoke;
+    margin-top: 20%;
 }
-
 
 
 .containLeft{
@@ -59,25 +77,82 @@ body{
     flex: 1;
 }
 
-.pictureMobile{
-
+.description, .perfume {
+    /*font-family: font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 500;
+    padding-left: 8%;
+    padding-right: 8%;
+    max-width: 80%;
+    color: hsl(228, 12%, 48%);
 }
-.picture img, .pictureMobile img{
-    width: 100%;
 
+.description {
+    font-size: small;
+    letter-spacing: .009em;
 }
-.allContain{
-display: flex;
-align-items: center;
-alignt-content: center;
-/* align-content: center; */
-justify-content: center;
+
+.perfume {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: .3em;
+    margin-top: -10%; /*pulls the whole .containerRight upward*/
+}
+
+.productName {
+    width: 80%;
+    padding-left: 8%;
 }
 
 footer {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
 }
 
+.picture img, .pictureMobile img{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+
+.containPrice{
+    padding-top: 10px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.price{
+    font-family: 'fraunces';
+    font-weight: 700;
+    font-size: x-large;
+    color: hsl(158, 36%, 37%);
+}
+
+.oldPrice{
+    font-family: 'montserrat', sans-serif;
+    text-decoration: line-through;
+    font-weight: 500;
+    font-size: small;
+    padding-left: 1.8em;
+}
+
+.push{
+    background-color: hsl(158, 36%, 37%);
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+    
+}
+
+.cartText {
+    font-family: 'montserrat', sans-serif;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
